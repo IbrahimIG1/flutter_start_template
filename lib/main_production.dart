@@ -3,6 +3,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:flutter_starter_template/core/di/di.dart';
 import 'package:flutter_starter_template/core/helper/extension.dart';
 import 'package:flutter_starter_template/core/local/secure_storage_helper.dart';
 import 'package:flutter_starter_template/core/local/shared_prefrence.dart';
@@ -14,7 +15,7 @@ import 'package:flutter_starter_template/generated/l10n.dart';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await dotenv.load(fileName: "assets/.env_pro");
-
+await setupAllDependencies();
   final token = await AppSecureStorageHelper.getToken(SharedPrefKeys.token);
 
   runApp(MyApp(token: token));
