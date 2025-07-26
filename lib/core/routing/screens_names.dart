@@ -1,6 +1,8 @@
 class ScreensNames {
   
   static const String onBoardingScreen = '/onBoardingScreen';
+  
+  static const String layoutScreen = '/layoutScreen';
   static const String home = '/home';
   static const String login = '/login';
   static const String register = '/register';

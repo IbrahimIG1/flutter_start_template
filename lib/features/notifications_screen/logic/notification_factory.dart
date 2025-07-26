@@ -1,10 +1,10 @@
 import 'dart:developer';
 import 'package:dartz/dartz.dart';
 import 'package:dio/dio.dart';
-import 'package:flutter_starter_template/core/network/error/dio_error_handler.dart';
-import 'package:flutter_starter_template/core/network/error/error_model.dart';
-import 'package:flutter_starter_template/core/network/error/firebase_handeler.dart';
-import 'package:flutter_starter_template/features/notifications_screen/ui/widgets/notification_item/notiification_toast.dart';
+import 'package:football_app/core/network/error/dio_error_handler.dart';
+import 'package:football_app/core/network/error/error_model.dart';
+import 'package:football_app/core/network/error/firebase_handeler.dart';
+import 'package:football_app/features/notifications_screen/ui/widgets/notification_item/notiification_toast.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
 

@@ -3,14 +3,14 @@ import 'dart:developer';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:flutter_starter_template/core/helper/get_user_token.dart';
-import 'package:flutter_starter_template/core/helper/spacer.dart';
-import 'package:flutter_starter_template/core/local/shared_prefrence.dart';
-import 'package:flutter_starter_template/core/routing/screens_names.dart';
-import 'package:flutter_starter_template/core/styles/colors/colors.dart';
-import 'package:flutter_starter_template/core/styles/fonts/app_text_styles.dart';
-import 'package:flutter_starter_template/core/widgets/buttons/app_button.dart';
-import 'package:flutter_starter_template/features/language_screen/logic/language_cubit.dart';
+import 'package:football_app/core/helper/get_user_token.dart';
+import 'package:football_app/core/helper/spacer.dart';
+import 'package:football_app/core/local/shared_prefrence.dart';
+import 'package:football_app/core/routing/screens_names.dart';
+import 'package:football_app/core/styles/colors/colors.dart';
+import 'package:football_app/core/styles/fonts/app_text_styles.dart';
+import 'package:football_app/core/widgets/buttons/app_button.dart';
+import 'package:football_app/features/language_screen/logic/language_cubit.dart';
 
 // import 'package:dio/dio.dart';
 class ChangeLangScreenBody extends StatelessWidget {

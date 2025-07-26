@@ -1,8 +1,8 @@
 import 'dart:developer';
-import 'package:flutter_starter_template/features/notifications_screen/logic/cubit/notification_state.dart';
-import 'package:flutter_starter_template/features/notifications_screen/logic/models/notification_model.dart';
-import 'package:flutter_starter_template/features/notifications_screen/logic/notification_factory.dart';
-import 'package:flutter_starter_template/features/notifications_screen/logic/repo/notification_repo.dart';
+import 'package:football_app/features/notifications_screen/logic/cubit/notification_state.dart';
+import 'package:football_app/features/notifications_screen/logic/models/notification_model.dart';
+import 'package:football_app/features/notifications_screen/logic/notification_factory.dart';
+import 'package:football_app/features/notifications_screen/logic/repo/notification_repo.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 class NotificationCubit extends Cubit<NotificationState> {

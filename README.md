@@ -1,4 +1,4 @@
-# flutter_starter_template
+# football_app
 
 A new Flutter project.
 

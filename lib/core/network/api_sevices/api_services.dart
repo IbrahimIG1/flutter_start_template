@@ -1,16 +1,16 @@
 import 'dart:developer';
 import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_starter_template/core/helper/current_flavor.dart';
-import 'package:flutter_starter_template/core/helper/extension.dart';
-import 'package:flutter_starter_template/core/local/secure_storage_helper.dart';
-import 'package:flutter_starter_template/core/local/shared_prefrence.dart';
-import 'package:flutter_starter_template/core/network/api_sevices/dio_factory.dart';
-import 'package:flutter_starter_template/core/network/api_sevices/refresh_token_model.dart';
-import 'package:flutter_starter_template/core/network/urls/api_constants%20.dart';
-import 'package:flutter_starter_template/core/routing/screens_names.dart';
-import 'package:flutter_starter_template/main_development.dart';
-import 'package:flutter_starter_template/main_production.dart';
+import 'package:football_app/core/helper/current_flavor.dart';
+import 'package:football_app/core/helper/extension.dart';
+import 'package:football_app/core/local/secure_storage_helper.dart';
+import 'package:football_app/core/local/shared_prefrence.dart';
+import 'package:football_app/core/network/api_sevices/dio_factory.dart';
+import 'package:football_app/core/network/api_sevices/refresh_token_model.dart';
+import 'package:football_app/core/network/urls/api_constants%20.dart';
+import 'package:football_app/core/routing/screens_names.dart';
+import 'package:football_app/main_development.dart';
+import 'package:football_app/main_production.dart';
 
 class ApiServices {
   final DioFactory dioFactory;

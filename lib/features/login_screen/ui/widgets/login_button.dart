@@ -1,11 +1,11 @@
 import 'package:conditional_builder_null_safety/conditional_builder_null_safety.dart';
-import 'package:flutter_starter_template/core/helper/extension.dart';
-import 'package:flutter_starter_template/core/routing/screens_names.dart';
-import 'package:flutter_starter_template/core/styles/colors/colors.dart';
-import 'package:flutter_starter_template/core/styles/fonts/app_text_styles.dart';
-import 'package:flutter_starter_template/core/widgets/buttons/app_button.dart';
-import 'package:flutter_starter_template/features/login_screen/logic/cubit/login_cubit.dart';
-import 'package:flutter_starter_template/features/login_screen/logic/cubit/login_state.dart';
+import 'package:football_app/core/helper/extension.dart';
+import 'package:football_app/core/routing/screens_names.dart';
+import 'package:football_app/core/styles/colors/colors.dart';
+import 'package:football_app/core/styles/fonts/app_text_styles.dart';
+import 'package:football_app/core/widgets/buttons/app_button.dart';
+import 'package:football_app/features/login_screen/logic/cubit/login_cubit.dart';
+import 'package:football_app/features/login_screen/logic/cubit/login_state.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 

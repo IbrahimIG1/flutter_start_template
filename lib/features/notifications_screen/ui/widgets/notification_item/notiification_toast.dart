@@ -1,4 +1,4 @@
-import 'package:flutter_starter_template/core/styles/colors/colors.dart';
+import 'package:football_app/core/styles/colors/colors.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';

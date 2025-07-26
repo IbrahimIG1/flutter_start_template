@@ -1,6 +1,6 @@
-import 'package:flutter_starter_template/core/helper/app_images.dart';
-import 'package:flutter_starter_template/core/helper/extension.dart';
-import 'package:flutter_starter_template/core/network/urls/api_constants%20.dart';
+import 'package:football_app/core/helper/app_images.dart';
+import 'package:football_app/core/helper/extension.dart';
+import 'package:football_app/core/network/urls/api_constants%20.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 

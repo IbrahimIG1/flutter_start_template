@@ -1,11 +1,11 @@
 import 'package:dartz/dartz.dart';
 import 'package:dio/dio.dart';
-import 'package:flutter_starter_template/core/network/api_sevices/api_services.dart';
-import 'package:flutter_starter_template/core/network/error/dio_error_handler.dart';
-import 'package:flutter_starter_template/core/network/error/error_model.dart';
-import 'package:flutter_starter_template/core/network/urls/api_constants%20.dart';
-import 'package:flutter_starter_template/features/login_screen/logic/models/login_model_req.dart';
-import 'package:flutter_starter_template/features/login_screen/logic/models/login_model_res.dart';
+import 'package:football_app/core/network/api_sevices/api_services.dart';
+import 'package:football_app/core/network/error/dio_error_handler.dart';
+import 'package:football_app/core/network/error/error_model.dart';
+import 'package:football_app/core/network/urls/api_constants%20.dart';
+import 'package:football_app/features/login_screen/logic/models/login_model_req.dart';
+import 'package:football_app/features/login_screen/logic/models/login_model_res.dart';
 
 class LoginRepo {
   final ApiServices apiServices;

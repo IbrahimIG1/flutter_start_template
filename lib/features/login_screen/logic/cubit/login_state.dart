@@ -1,11 +1,9 @@
-
-import 'package:flutter_starter_template/core/network/error/error_model.dart';
-import 'package:flutter_starter_template/features/login_screen/logic/models/login_model_res.dart';
+import 'package:football_app/core/network/error/error_model.dart';
+import 'package:football_app/features/login_screen/logic/models/login_model_res.dart';
 
 sealed class LoginState {}
 
 final class LoginInitial extends LoginState {}
-
 
 final class ChangePasswordVisibilityState extends LoginState {}
 
@@ -20,6 +18,3 @@ final class LoginSuccessState extends LoginState {
   final LoginModelResponse loginModelResponse;
   LoginSuccessState(this.loginModelResponse);
 }
-
-
-

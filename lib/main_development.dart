@@ -3,17 +3,19 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:flutter_starter_template/core/helper/extension.dart';
-import 'package:flutter_starter_template/core/local/secure_storage_helper.dart';
-import 'package:flutter_starter_template/core/local/shared_prefrence.dart';
-import 'package:flutter_starter_template/core/routing/generate_route.dart';
-import 'package:flutter_starter_template/core/routing/screens_names.dart';
-import 'package:flutter_starter_template/features/language_screen/logic/language_cubit.dart';
-import 'package:flutter_starter_template/generated/l10n.dart';
+import 'package:football_app/core/di/di.dart';
+import 'package:football_app/core/helper/extension.dart';
+import 'package:football_app/core/local/secure_storage_helper.dart';
+import 'package:football_app/core/local/shared_prefrence.dart';
+import 'package:football_app/core/routing/generate_route.dart';
+import 'package:football_app/core/routing/screens_names.dart';
+import 'package:football_app/features/language_screen/logic/language_cubit.dart';
+import 'package:football_app/generated/l10n.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await dotenv.load(fileName: "assets/.env_dev");
+  await setupAllDependencies();
 
   final token = await AppSecureStorageHelper.getToken(SharedPrefKeys.token);
 
@@ -47,12 +49,12 @@ class MyApp extends StatelessWidget {
                   ],
                   supportedLocales: S.delegate.supportedLocales,
                   title: 'App',
-                  theme: ThemeData(),
+                  theme: ThemeData(scaffoldBackgroundColor: Colors.white),
                   onGenerateRoute: AppRoutes.generateRoute,
                   initialRoute:
                       token.isNullOrEmpty()
-                          ? ScreensNames.login
-                          : ScreensNames.home,
+                          ? ScreensNames.layoutScreen
+                          : ScreensNames.layoutScreen,
                 );
               },
             ),

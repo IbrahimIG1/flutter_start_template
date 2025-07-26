@@ -1,4 +1,4 @@
-import 'package:flutter_starter_template/core/network/error/error_model.dart';
+import 'package:football_app/core/network/error/error_model.dart';
 
 sealed class ForgetPasswordState {}
 

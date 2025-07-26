@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:flutter_starter_template/core/styles/colors/colors.dart';
-import 'package:flutter_starter_template/core/styles/fonts/family_font.dart';
-import 'package:flutter_starter_template/core/styles/fonts/font_weights.dart';
+import 'package:football_app/core/styles/colors/colors.dart';
+import 'package:football_app/core/styles/fonts/family_font.dart';
+import 'package:football_app/core/styles/fonts/font_weights.dart';
 
 class AppTextStyles {
   // Private constructor
@@ -216,10 +216,22 @@ class AppTextStyles {
     fontFamily: AppFontFamily.plex,
     fontWeight: AppFontWeights.medium,
   );
+  TextStyle fontBlack16Regular = TextStyle(
+    fontSize: 16.sp,
+    color: AppColors().black,
+    fontFamily: AppFontFamily.plex,
+    fontWeight: AppFontWeights.regular,
+  );
   TextStyle fontBlack12SemiBold = TextStyle(
     fontSize: 12.sp,
     color: AppColors().black,
     fontFamily: AppFontFamily.plex,
     fontWeight: AppFontWeights.semiBold,
+  );
+   TextStyle fontBlack20Bold= TextStyle(
+    fontSize: 20.sp,
+    color: AppColors().black,
+    fontFamily: AppFontFamily.plex,
+    fontWeight: AppFontWeights.bold,
   );
 }

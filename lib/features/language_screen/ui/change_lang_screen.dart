@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_starter_template/features/language_screen/ui/widgets/change_lang_screen_body.dart';
+import 'package:football_app/features/language_screen/ui/widgets/change_lang_screen_body.dart';
 
 class ChangeLangScreen extends StatelessWidget {
   const ChangeLangScreen({super.key});
@@ -15,7 +15,7 @@ class ChangeLangScreen extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [ChangeLangScreenBody()],
             ),
-          )
+          ),
         ],
       ),
     );

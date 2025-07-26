@@ -1,4 +1,4 @@
-import 'package:flutter_starter_template/core/models/user_mode.dart';
+import 'package:football_app/core/models/user_mode.dart';
 
 class NotificationModel {
   List<NotificationsModel> notifications;
