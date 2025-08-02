@@ -234,4 +234,38 @@ class AppTextStyles {
     fontFamily: AppFontFamily.plex,
     fontWeight: AppFontWeights.bold,
   );
+  
+  TextStyle fontBlack14Regular = TextStyle(
+    fontSize: 14.sp,
+    color: AppColors().black,
+    fontFamily: AppFontFamily.plex,
+    fontWeight: AppFontWeights.regular,
+  );
+  TextStyle fontBlack14Bold = TextStyle(
+    fontSize: 14.sp,
+    color: AppColors().black,
+    fontFamily: AppFontFamily.plex,
+    fontWeight: AppFontWeights.bold,
+  );
+  
+  TextStyle fontBlack16Bold = TextStyle(
+    fontSize: 16.sp,
+    color: AppColors().black,
+    fontFamily: AppFontFamily.plex,
+    fontWeight: AppFontWeights.bold,
+  );
+  TextStyle fontGrey12Regular = TextStyle(
+    fontSize: 12.sp,  
+    color: AppColors().greyLight,
+    fontFamily: AppFontFamily.plex,
+    fontWeight: AppFontWeights.regular,
+  );
+    TextStyle fontBlue14Bold = TextStyle(
+    fontSize: 14.sp,
+    color: Colors.blue,
+    fontFamily: AppFontFamily.plex,
+    fontWeight: AppFontWeights.bold,
+  );
+  
+
 }

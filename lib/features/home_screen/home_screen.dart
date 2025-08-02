@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:football_app/core/helper/spacer.dart';
 import 'package:football_app/core/styles/fonts/app_text_styles.dart';
 import 'package:football_app/features/home_screen/logic/models/upcoming_match_model.dart';
 import 'package:football_app/features/home_screen/widgets/live_match_card.dart';
@@ -76,15 +77,15 @@ class HomeScreen extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               sectionHeaderItem('Top League'),
-              const SizedBox(height: 12),
+               verticalSpace( 12),
               topLeagueRowSection(),
-              const SizedBox(height: 24),
+               verticalSpace( 24),
               sectionHeaderItem('Live Match'),
-              const SizedBox(height: 16),
+               verticalSpace( 16),
               liveMatchCard(context: context),
-              const SizedBox(height: 55),
+               verticalSpace( 55),
               sectionHeaderItem('Upcoming Match'),
-              const SizedBox(height: 12),
+               verticalSpace( 12),
               ...upcomingMatches.map(
                 (e) => Padding(
                   padding: EdgeInsets.only(bottom: 8.h),

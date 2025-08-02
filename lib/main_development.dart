@@ -48,8 +48,14 @@ class MyApp extends StatelessWidget {
                     GlobalCupertinoLocalizations.delegate,
                   ],
                   supportedLocales: S.delegate.supportedLocales,
-                  title: 'App',
-                  theme: ThemeData(scaffoldBackgroundColor: Colors.white),
+                  title: 'Football App',
+                  theme: ThemeData(
+                    scaffoldBackgroundColor: Colors.white,
+                    appBarTheme: AppBarTheme(
+                      backgroundColor: Colors.white,
+                      scrolledUnderElevation: 0,
+                    ),
+                  ),
                   onGenerateRoute: AppRoutes.generateRoute,
                   initialRoute:
                       token.isNullOrEmpty()

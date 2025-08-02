@@ -6,6 +6,7 @@ import 'package:football_app/core/helper/spacer.dart';
 import 'package:football_app/features/home_screen/home_screen.dart';
 import 'package:football_app/features/layout_screen/ui/widget/custom_bottom_nav_bar.dart';
 import 'package:football_app/features/layout_screen/logic/layout_cubit.dart';
+import 'package:football_app/features/league_statistics_screen/ui/league_statistics_screen.dart';
 import 'package:football_app/features/my_profile_screen/my_profile_screen.dart';
 
 class LayoutScreen extends StatelessWidget {
@@ -13,7 +14,7 @@ class LayoutScreen extends StatelessWidget {
 
   final List<Widget> screens = [
     HomeScreen(),
-    HomeScreen(), // Replace with NewsScreen()
+    LeagueStatisticsScreen(), // Replace with NewsScreen()
     HomeScreen(), // Replace with StoreScreen()
     MyProfileScreen(),
   ];
