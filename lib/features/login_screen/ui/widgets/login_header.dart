@@ -1,8 +1,8 @@
 // re/themes/fonts/app_text_styles.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:football_app/core/helper/spacer.dart';
-import 'package:football_app/core/styles/fonts/app_text_styles.dart';
+import 'package:sandwich_app/core/helper/spacer.dart';
+import 'package:sandwich_app/core/styles/fonts/app_text_styles.dart';
 
 Widget loginBuildHeader() {
   return Column(

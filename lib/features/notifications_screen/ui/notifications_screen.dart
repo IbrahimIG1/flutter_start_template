@@ -1,9 +1,9 @@
-import 'package:football_app/core/helper/spacer.dart';
-import 'package:football_app/core/widgets/buttons/app_header.dart';
-import 'package:football_app/core/widgets/toast/app_toast.dart';
-import 'package:football_app/features/notifications_screen/logic/cubit/notification_cubit.dart';
-import 'package:football_app/features/notifications_screen/logic/cubit/notification_state.dart';
-import 'package:football_app/features/notifications_screen/ui/widgets/notifications_list.dart';
+import 'package:sandwich_app/core/helper/spacer.dart';
+import 'package:sandwich_app/core/widgets/buttons/app_header.dart';
+import 'package:sandwich_app/core/widgets/toast/app_toast.dart';
+import 'package:sandwich_app/features/notifications_screen/logic/cubit/notification_cubit.dart';
+import 'package:sandwich_app/features/notifications_screen/logic/cubit/notification_state.dart';
+import 'package:sandwich_app/features/notifications_screen/ui/widgets/notifications_list.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';

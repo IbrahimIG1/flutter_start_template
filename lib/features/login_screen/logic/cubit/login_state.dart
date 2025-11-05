@@ -1,5 +1,5 @@
-import 'package:football_app/core/network/error/error_model.dart';
-import 'package:football_app/features/login_screen/logic/models/login_model_res.dart';
+import 'package:sandwich_app/core/network/error/error_model.dart';
+import 'package:sandwich_app/features/login_screen/logic/models/login_model_res.dart';
 
 sealed class LoginState {}
 

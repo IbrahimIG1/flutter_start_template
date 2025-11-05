@@ -1,4 +1,4 @@
-import 'package:football_app/core/models/user_mode.dart';
+import 'package:sandwich_app/core/models/user_mode.dart';
 
 class LoginModelResponse {
   String token;

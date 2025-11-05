@@ -1,5 +1,5 @@
-import 'package:football_app/core/local/secure_storage_helper.dart';
-import 'package:football_app/core/local/shared_prefrence.dart';
+import 'package:sandwich_app/core/local/secure_storage_helper.dart';
+import 'package:sandwich_app/core/local/shared_prefrence.dart';
 
 class GetUserToken {
   static Future<String>? getToken() async {

@@ -1,15 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:football_app/core/routing/arguments_keys.dart';
-import 'package:football_app/core/routing/screens_names.dart';
-import 'package:football_app/features/forget_password_screen/forget_password_screen.dart';
-import 'package:football_app/features/home_screen/home_screen.dart';
-import 'package:football_app/features/language_screen/ui/change_lang_screen.dart';
-import 'package:football_app/features/layout_screen/ui/layout_screen.dart';
-import 'package:football_app/features/login_screen/ui/login_screen.dart';
-import 'package:football_app/features/onboarding_screen/onboarding_screen.dart';
-import 'package:football_app/features/register_screen/ui/register_screen.dart';
-import 'package:football_app/features/reset_password_screen/reset_password_screen.dart';
+import 'package:sandwich_app/core/routing/arguments_keys.dart';
+import 'package:sandwich_app/core/routing/screens_names.dart';
+import 'package:sandwich_app/features/forget_password_screen/forget_password_screen.dart';
+import 'package:sandwich_app/features/home_screen/home_screen.dart';
+import 'package:sandwich_app/features/language_screen/ui/change_lang_screen.dart';
+import 'package:sandwich_app/features/login_screen/ui/login_screen.dart';
+import 'package:sandwich_app/features/onboarding_screen/onboarding_screen.dart';
+import 'package:sandwich_app/features/register_screen/ui/register_screen.dart';
+import 'package:sandwich_app/features/reset_password_screen/reset_password_screen.dart';
 
 class AppRoutes {
   static Route<dynamic>? generateRoute(RouteSettings settings) {
@@ -18,9 +17,6 @@ class AppRoutes {
     // final userName = args?['userName'] ?? 'Guest';
     // final userId = args?['userId'] ?? 0;
     switch (settings.name) {
-      //* LayoutScreen
-      case ScreensNames.layoutScreen:
-        return MaterialPageRoute(builder: (_) =>  LayoutScreen());
       //* Home Screen
       case ScreensNames.home:
         return MaterialPageRoute(builder: (_) => HomeScreen());

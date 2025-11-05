@@ -1,9 +1,9 @@
-import 'package:football_app/core/di/di.dart';
-import 'package:football_app/core/local/secure_storage_helper.dart';
-import 'package:football_app/core/local/shared_prefrence.dart';
-import 'package:football_app/core/network/api_sevices/api_services.dart';
-import 'package:football_app/core/network/api_sevices/dio_factory.dart';
-import 'package:football_app/features/notifications_screen/logic/notification_factory.dart';
+import 'package:sandwich_app/core/di/di.dart';
+import 'package:sandwich_app/core/local/secure_storage_helper.dart';
+import 'package:sandwich_app/core/local/shared_prefrence.dart';
+import 'package:sandwich_app/core/network/api_sevices/api_services.dart';
+import 'package:sandwich_app/core/network/api_sevices/dio_factory.dart';
+import 'package:sandwich_app/features/notifications_screen/logic/notification_factory.dart';
 
 class SetupForServices {
   static Future<void> setupForServices() async {

@@ -1,4 +1,4 @@
-import 'package:football_app/core/helper/current_flavor.dart';
+import 'package:sandwich_app/core/helper/current_flavor.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 /// Helper class for managing SharedPreferences in a more modular and concise way.

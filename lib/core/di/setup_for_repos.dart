@@ -1,9 +1,9 @@
-import 'package:football_app/core/di/di.dart';
-import 'package:football_app/features/forget_password_screen/logic/repo/forget_password_repo.dart';
-import 'package:football_app/features/login_screen/logic/repo/login_repo.dart';
-import 'package:football_app/features/notifications_screen/logic/repo/notification_repo.dart';
-import 'package:football_app/features/register_screen/logic/repo/register_repo.dart';
-import 'package:football_app/features/reset_password_screen/logic/repo/reset_password_repo.dart';
+import 'package:sandwich_app/core/di/di.dart';
+import 'package:sandwich_app/features/forget_password_screen/logic/repo/forget_password_repo.dart';
+import 'package:sandwich_app/features/login_screen/logic/repo/login_repo.dart';
+import 'package:sandwich_app/features/notifications_screen/logic/repo/notification_repo.dart';
+import 'package:sandwich_app/features/register_screen/logic/repo/register_repo.dart';
+import 'package:sandwich_app/features/reset_password_screen/logic/repo/reset_password_repo.dart';
 
 class SetupForRepos {
   static void setupForRepos() {
@@ -20,6 +20,8 @@ class SetupForRepos {
       () => ResetPasswordRepo(getIt()),
     );
     //* Notification Repo
-    getIt.registerLazySingleton<NotificationRepo>(() => NotificationRepo(getIt())); 
+    getIt.registerLazySingleton<NotificationRepo>(
+      () => NotificationRepo(getIt()),
+    );
   }
 }

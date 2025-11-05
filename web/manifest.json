@@ -1,6 +1,6 @@
 {
-    "name": "football_app",
-    "short_name": "football_app",
+    "name": "sandwich_app",
+    "short_name": "sandwich_app",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

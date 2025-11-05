@@ -1,16 +1,15 @@
-import 'package:football_app/core/di/di.dart';
-import 'package:football_app/features/forget_password_screen/logic/cubit/forget_passord_cubit.dart';
-import 'package:football_app/features/layout_screen/logic/layout_cubit.dart';
-import 'package:football_app/features/login_screen/logic/cubit/login_cubit.dart';
-import 'package:football_app/features/register_screen/logic/cubit/register_cubit.dart';
-import 'package:football_app/features/reset_password_screen/logic/cubit/reset_passord_cubit.dart';
+import 'package:sandwich_app/core/di/di.dart';
+import 'package:sandwich_app/features/forget_password_screen/logic/cubit/forget_passord_cubit.dart';
+import 'package:sandwich_app/features/language_screen/logic/language_cubit.dart';
+import 'package:sandwich_app/features/login_screen/logic/cubit/login_cubit.dart';
+import 'package:sandwich_app/features/register_screen/logic/cubit/register_cubit.dart';
+import 'package:sandwich_app/features/reset_password_screen/logic/cubit/reset_passord_cubit.dart';
 
 class SetupForCubits {
   static void setUpForCubits() {
     //* Notification Factory
-      // NotificationFactory().initialize(); 
-    //* Layout
-    getIt.registerFactory<LayoutCubit>(() => LayoutCubit());
+    // NotificationFactory().initialize();
+
     //* Login
     getIt.registerFactory<LoginCubit>(() => LoginCubit(getIt()));
     //* Register
@@ -22,6 +21,9 @@ class SetupForCubits {
     //* Rest Password
     getIt.registerFactory<ResetPasswordCubit>(
       () => ResetPasswordCubit(getIt()),
+    );
+     getIt.registerFactory<LanguageCubit>(
+      () => LanguageCubit(),
     );
     //* Notification
     // getIt.registerFactory<NotificationCubit>(() => NotificationCubit(getIt(), getIt()));

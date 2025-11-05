@@ -1,6 +1,6 @@
-import 'package:football_app/core/widgets/text_field/app_text_form_feild.dart';
-import 'package:football_app/core/widgets/toast/app_toast.dart';
-import 'package:football_app/features/register_screen/logic/cubit/register_cubit.dart';
+import 'package:sandwich_app/core/widgets/text_field/app_text_form_feild.dart';
+import 'package:sandwich_app/core/widgets/toast/app_toast.dart';
+import 'package:sandwich_app/features/register_screen/logic/cubit/register_cubit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';

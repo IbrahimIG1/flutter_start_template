@@ -1,4 +1,4 @@
-import 'package:football_app/core/styles/colors/colors.dart';
+import 'package:sandwich_app/core/styles/colors/colors.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:fluttertoast/fluttertoast.dart';

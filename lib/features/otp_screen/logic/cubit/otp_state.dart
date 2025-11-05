@@ -1,4 +1,4 @@
-import 'package:football_app/core/network/error/error_model.dart';
+import 'package:sandwich_app/core/network/error/error_model.dart';
 
 abstract class OtpState {}
 

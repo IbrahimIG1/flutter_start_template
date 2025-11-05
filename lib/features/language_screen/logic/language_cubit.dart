@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:football_app/core/local/shared_prefrence.dart';
+import 'package:sandwich_app/core/local/shared_prefrence.dart';
 
 part 'language_state.dart';
 

@@ -1,5 +1,5 @@
-import 'package:football_app/core/helper/app_images.dart';
-import 'package:football_app/core/styles/fonts/app_text_styles.dart';
+import 'package:sandwich_app/core/helper/app_images.dart';
+import 'package:sandwich_app/core/styles/fonts/app_text_styles.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';

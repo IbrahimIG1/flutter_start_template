@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:football_app/core/styles/colors/colors.dart';
-import 'package:football_app/core/styles/fonts/app_text_styles.dart';
+import 'package:sandwich_app/core/styles/colors/colors.dart';
+import 'package:sandwich_app/core/styles/fonts/app_text_styles.dart';
 
 class AppTextFormFeild extends StatelessWidget {
   const AppTextFormFeild({

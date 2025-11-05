@@ -1,4 +1,4 @@
-package com.example.football_app
+package com.penta.b2p_sandwich_app
 
 import io.flutter.embedding.android.FlutterActivity
 

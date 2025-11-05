@@ -1,9 +1,9 @@
 import 'package:dartz/dartz.dart';
 import 'package:dio/dio.dart';
-import 'package:football_app/core/network/api_sevices/api_services.dart';
-import 'package:football_app/core/network/error/dio_error_handler.dart';
-import 'package:football_app/core/network/error/error_model.dart';
-import 'package:football_app/core/network/urls/api_constants%20.dart';
+import 'package:sandwich_app/core/network/api_sevices/api_services.dart';
+import 'package:sandwich_app/core/network/error/dio_error_handler.dart';
+import 'package:sandwich_app/core/network/error/error_model.dart';
+import 'package:sandwich_app/core/network/urls/api_constants%20.dart';
 
 class OtpRepo {
   final ApiServices apiServices;

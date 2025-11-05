@@ -1,6 +1,6 @@
-import 'package:football_app/core/styles/colors/colors.dart';
-import 'package:football_app/core/styles/fonts/app_text_styles.dart';
-import 'package:football_app/features/register_screen/logic/cubit/register_cubit.dart';
+import 'package:sandwich_app/core/styles/colors/colors.dart';
+import 'package:sandwich_app/core/styles/fonts/app_text_styles.dart';
+import 'package:sandwich_app/features/register_screen/logic/cubit/register_cubit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 

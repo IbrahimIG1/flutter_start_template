@@ -1,12 +1,12 @@
 import 'package:dartz/dartz.dart';
 import 'package:dio/dio.dart';
-import 'package:football_app/core/network/api_sevices/api_services.dart';
-import 'package:football_app/core/network/error/dio_error_handler.dart';
-import 'package:football_app/core/network/error/error_model.dart';
-import 'package:football_app/core/network/urls/api_constants%20.dart';
-import 'package:football_app/features/login_screen/logic/repo/login_repo.dart';
-import 'package:football_app/features/otp_screen/logic/repo/otp_repo.dart';
-import 'package:football_app/features/register_screen/logic/model/register_model_req.dart';
+import 'package:sandwich_app/core/network/api_sevices/api_services.dart';
+import 'package:sandwich_app/core/network/error/dio_error_handler.dart';
+import 'package:sandwich_app/core/network/error/error_model.dart';
+import 'package:sandwich_app/core/network/urls/api_constants%20.dart';
+import 'package:sandwich_app/features/login_screen/logic/repo/login_repo.dart';
+import 'package:sandwich_app/features/otp_screen/logic/repo/otp_repo.dart';
+import 'package:sandwich_app/features/register_screen/logic/model/register_model_req.dart';
 
 class RegisterRepo extends OtpRepo {
   @override

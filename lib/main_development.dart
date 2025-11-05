@@ -3,14 +3,14 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:football_app/core/di/di.dart';
-import 'package:football_app/core/helper/extension.dart';
-import 'package:football_app/core/local/secure_storage_helper.dart';
-import 'package:football_app/core/local/shared_prefrence.dart';
-import 'package:football_app/core/routing/generate_route.dart';
-import 'package:football_app/core/routing/screens_names.dart';
-import 'package:football_app/features/language_screen/logic/language_cubit.dart';
-import 'package:football_app/generated/l10n.dart';
+import 'package:sandwich_app/core/di/di.dart';
+import 'package:sandwich_app/core/helper/extension.dart';
+import 'package:sandwich_app/core/local/secure_storage_helper.dart';
+import 'package:sandwich_app/core/local/shared_prefrence.dart';
+import 'package:sandwich_app/core/routing/generate_route.dart';
+import 'package:sandwich_app/core/routing/screens_names.dart';
+import 'package:sandwich_app/features/language_screen/logic/language_cubit.dart';
+import 'package:sandwich_app/generated/l10n.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -53,8 +53,8 @@ class MyApp extends StatelessWidget {
                   onGenerateRoute: AppRoutes.generateRoute,
                   initialRoute:
                       token.isNullOrEmpty()
-                          ? ScreensNames.layoutScreen
-                          : ScreensNames.layoutScreen,
+                          ? ScreensNames.home
+                          : ScreensNames.home,
                 );
               },
             ),
