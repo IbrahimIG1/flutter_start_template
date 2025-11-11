@@ -11,7 +11,6 @@ import 'package:sandwich_app/features/login_screen/ui/widgets/login_form.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:flutter_svg/svg.dart';
 
 class LoginScreen extends StatelessWidget {
   const LoginScreen({super.key});
@@ -25,7 +24,7 @@ class LoginScreen extends StatelessWidget {
         child: BlocConsumer<LoginCubit, LoginState>(
           listener: (context, state) {
             if (state is LoginSuccessState) {
-              showToast(msg: "مرحبا بك فى استقرار", state: ToastStates.SUCCESS);
+              showToast(msg: "مرحبا بك فى التطبيق", state: ToastStates.SUCCESS);
 
               Navigator.pushReplacementNamed(context, ScreensNames.home);
             }
@@ -51,7 +50,7 @@ class LoginScreen extends StatelessWidget {
                         children: [
                           verticalSpace(40.h),
                           Center(
-                            child: SvgPicture.asset(
+                            child: Image.asset(
                               AppImages().logo,
                               color: Colors.green,
                               width: 90.w,

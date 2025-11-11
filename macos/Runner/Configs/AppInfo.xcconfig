@@ -8,7 +8,7 @@
 PRODUCT_NAME = sandwich_app
 
 // The application's bundle identifier
-PRODUCT_BUNDLE_IDENTIFIER = com.penta.b2p_sandwich_app
+PRODUCT_BUNDLE_IDENTIFIER = com.ibrahim.template
 
 // The copyright displayed in application information
 PRODUCT_COPYRIGHT = Copyright © 2025 com.example. All rights reserved.

@@ -1,4 +1,4 @@
-package com.penta.b2p_sandwich_app
+package com.ibrahim.template
 
 import io.flutter.embedding.android.FlutterActivity
 

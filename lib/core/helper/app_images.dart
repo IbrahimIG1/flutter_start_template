@@ -10,13 +10,9 @@ class AppImages {
     _instance ??= AppImages._internal();
     return _instance!;
   }
-   String logo = 'assets/images/logo.svg';
-   String linkIcon = 'assets/images/link_icon.svg';
+   String logo = 'assets/images/logo_foreground.png';
 
    String updateDialogImage = 'assets/images/splash12.png';
-
-  //* Loading
-   String loadingGif = 'assets/images/loading.gif';
 
    String arrowBack = 'assets/images/login/arrow_back.svg';
   //* Notifications Screen

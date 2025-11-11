@@ -31,7 +31,7 @@ Widget appHeaderWithLogo(BuildContext context, {String? title}) {
   return Row(
     mainAxisAlignment: MainAxisAlignment.center,
     crossAxisAlignment: CrossAxisAlignment.center,
-    children: [SvgPicture.asset(AppImages().logo, height: 30.h, width: 85.w)],
+    children: [Image.asset(AppImages().logo, height: 30.h, width: 85.w)],
   );
 }
 

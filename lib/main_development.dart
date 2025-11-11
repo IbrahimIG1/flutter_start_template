@@ -53,7 +53,7 @@ class MyApp extends StatelessWidget {
                   onGenerateRoute: AppRoutes.generateRoute,
                   initialRoute:
                       token.isNullOrEmpty()
-                          ? ScreensNames.home
+                          ? ScreensNames.login
                           : ScreensNames.home,
                 );
               },

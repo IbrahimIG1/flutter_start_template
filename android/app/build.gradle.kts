@@ -6,7 +6,7 @@ plugins {
 }
 
 android {
-    namespace = "com.penta.b2p_sandwich_app"
+    namespace = "com.ibrahim.template"
     compileSdk = flutter.compileSdkVersion
     ndkVersion = flutter.ndkVersion
 
@@ -21,7 +21,7 @@ android {
 
     defaultConfig {
         // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
-        applicationId = "com.penta.b2p_sandwich_app"
+        applicationId = "com.ibrahim.template"
         // You can update the following values to match your application needs.
         // For more information, see: https://flutter.dev/to/review-gradle-config.
         minSdk = flutter.minSdkVersion
@@ -36,14 +36,14 @@ android {
     productFlavors {
         create("dev") { // Use `create` for defining flavors in Kotlin DSL
             dimension = "default"
-            applicationId = "com.penta.b2p_sandwich_app.dev"
+            applicationId = "com.ibrahim.template.dev"
             versionNameSuffix = ".dev"
-            resValue("string", "app_name", "B2P Dev")
+            resValue("string", "app_name", "App Name Dev")
         }
         create("pro") {
             dimension = "default"
-            applicationId = "com.penta.b2p_sandwich_app"
-            resValue("string", "app_name", "B2P")
+            applicationId = "com.ibrahim.template"
+            resValue("string", "app_name", "App Name")
         }
     }
 
