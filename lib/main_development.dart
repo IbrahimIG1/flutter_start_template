@@ -60,7 +60,7 @@ class MyApp extends StatelessWidget {
                   initialRoute:
                       token.isNullOrEmpty()
                           ? ScreensNames.layoutScreen
-                          : ScreensNames.layoutScreen,
+                          : ScreensNames.layoutScreen, 
                 );
               },
             ),
