@@ -1,4 +1,4 @@
-## Flutter Start Template — sandwich_app
+## Flutter Start Template
 
 This repository is a reusable Flutter application template intended as a starting point for new apps. It includes a recommended folder layout, common packages and wiring for dependency injection, networking, localization, flavors (development / production), and a set of useful UI widgets and helpers.
 
