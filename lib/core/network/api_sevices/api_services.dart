@@ -48,7 +48,23 @@ class ApiServices {
         ),
       );
       return response.data;
-    } on DioException {
+    } on DioException catch (e) {
+      if (e.response?.statusCode == 401) {
+        final newToken = await refreshToken();
+        if (!newToken.isNullOrEmpty()) {
+          return await get(
+            baseUrl: baseUrl,
+            queryParameters: queryParameters,
+            data: data,
+            token: newToken,
+          );
+        } else {
+          currentContext?.pushNamedAndRemoveUntil(
+            ScreensNames.login,
+            predicate: (route) => false,
+          );
+        }
+      }
       rethrow;
     }
   }
@@ -113,6 +129,7 @@ class ApiServices {
         queryParameters: queryParameters,
         options: Options(
           headers:
+          
               headers ??
               {
                 'Authorization': await AppSecureStorageHelper.getToken(
@@ -123,6 +140,22 @@ class ApiServices {
       );
       return response;
     } on DioException catch (e) {
+      if (e.response?.statusCode == 401) {
+        final newToken = await refreshToken();
+        if (!newToken.isNullOrEmpty()) {
+          return await post(
+            baseUrl: baseUrl,
+            queryParameters: queryParameters,
+            data: data,
+            token: newToken,
+          );
+        } else {
+          currentContext?.pushNamedAndRemoveUntil(
+            ScreensNames.login,
+            predicate: (route) => false,
+          );
+        }
+      }
       log("POST Error: $e");
       rethrow;
     }
@@ -185,7 +218,6 @@ class ApiServices {
   Future<void> deleteById({
     Map<String, dynamic>? data,
     Map<String, dynamic>? queryParameters,
-    required String token,
     required String baseUrl,
   }) async {
     try {
@@ -193,7 +225,13 @@ class ApiServices {
         baseUrl,
         data: data,
         queryParameters: queryParameters ?? {},
-        options: Options(headers: {'Authorization': token}),
+        options: Options(
+          headers: {
+            'Authorization': await AppSecureStorageHelper.getToken(
+              SharedPrefKeys.token,
+            ),
+          },
+        ),
       );
     } on DioException catch (e) {
       log("DELETE Error: $e");
@@ -226,8 +264,7 @@ class ApiServices {
       return newToken.accessToken;
     } on DioException catch (e) {
       if (e.response?.statusCode == 403 || e.response?.statusCode == 401) {
-        await AppSecureStorageHelper.deleteToken(SharedPrefKeys.refreshToken);
-        await AppSecureStorageHelper.deleteToken(SharedPrefKeys.token);
+        await AppSecureStorageHelper.clear();
 
         if (currentContext != null) {
           Navigator.pushNamedAndRemoveUntil(
