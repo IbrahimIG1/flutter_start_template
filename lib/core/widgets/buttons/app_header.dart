@@ -2,7 +2,6 @@ import 'package:sandwich_app/core/helper/app_images.dart';
 import 'package:sandwich_app/core/styles/fonts/app_text_styles.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:flutter_svg/svg.dart';
 
 Widget appHeader(BuildContext context, {String? title, Function? onBack}) {
   return Row(
@@ -18,7 +17,7 @@ Widget appHeader(BuildContext context, {String? title, Function? onBack}) {
           child: SizedBox(
             height: 13.5.h,
             width: 7.5.w,
-            child: SvgPicture.asset(AppImages().arrowBack),
+            child: Icon(Icons.arrow_back_ios, color: Colors.black, size: 20.sp),
           ),
         ),
       ),

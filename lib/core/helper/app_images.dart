@@ -14,10 +14,5 @@ class AppImages {
 
    String updateDialogImage = 'assets/images/splash12.png';
 
-   String arrowBack = 'assets/images/login/arrow_back.svg';
-  //* Notifications Screen
-   String notificationEmpty =
-      'assets/images/notifications/notification_empty.svg';
-
   
 }
